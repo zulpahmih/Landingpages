@@ -5,56 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bootstrap demo</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  <style>
-    body {
-      background-color: black;
-    }
-
-    @font-face {
-      font-family: "Peralta";
-      src: url('Peralta-Regular.ttf') format('truetype');
-    }
-
-    a {
-      font-family: Peralta, arial;
-    }
-
-    .navbar-brand-custom {
-      padding-right: 70px;
-      padding-left: 10px;
-    }
-
-    .collapse-custom {
-      padding-right: 20px;
-    }
-
-    .nav-item {
-      padding-right: 50px;
-    }
-
-    .btn-search-custom:hover {
-      background-color: black;
-      color: white;
-      font-weight: bold;
-    }
-
-    .nav-link:hover {
-      background-color: black;
-      border-radius: 15px;
-    }
-
-    .navlink {
-      color: white;
-    }
-
-    .active {
-      color: white !important;
-    }
-
-    .card{
-      background-color: #ced4da; font-weight: bold;
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  
 </head>
 
 <body>
@@ -75,13 +27,13 @@
             <a class="nav-link active rounded-pill" href="#info">Information</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active rounded-pill" href="#">About</a>
+            <a class="nav-link active rounded-pill" href="#planet">Planet</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active rounded-pill" href="#about">Organization</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active rounded-pill" href="#">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active rounded-pill" href="#">Map</a>
           </li>
         </ul>
         <form class="d-flex d-flex-custom " role="search">
@@ -93,7 +45,7 @@
   </nav>
 
   <!-- Carousel -->
-  <section id="home" style=" width: 55%;margin: auto; margin-top: 100px; margin-bottom: 50px; ">
+  <section id="home" style=" width: 55%;margin: auto; margin-top: 100px; margin-bottom: 80px; ">
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
       <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -101,28 +53,25 @@
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
       <div class="carousel-inner bg-light" style="border-radius: 50px; ">
-          <div class="carousel-item active">
-          <img src="assets/matahari_1.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-              <h5>Matahari</h5>
-              <p>Some representative placeholder content for the first slide.</p>
-          </div>
-          </div>
-          <div class="carousel-item active">
-            <img src="assets/merkurius_2.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>Kedua</h5>
-                <p>Some representative placeholder content for the first slide.</p>
-            </div>
-            </div>
             <div class="carousel-item active">
-              <img src="assets/venus_3.jpg" class="d-block w-100" alt="...">
+              <img src="assets/why.jpg" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">
-                  <h5>Kelima</h5>
-                  <p>Some representative placeholder content for the first slide.</p>
               </div>
-              </div>
-            
+              </div> 
+              <div class="carousel-item">
+                <img src="assets/matahari_1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Matahari</h5>
+                  <p>Matahari tidak termasuk planet tetapi Bola gas</p>
+                </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/pluto_10.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Pluto</h5>
+                    <p>Pluto sejak 2006 sudah tidak dinyatakan sebagai planet</p>
+                  </div>
+                  </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -142,28 +91,43 @@
       <h1 class="text-center pt-5 text-white">Information</h1>
       <div class="col-md-12 pt-3 ">
         <div class="card" >
-          <h5 class="card-img-top pt-3 fs-3 text-center ">Solar System</h5>
+          <h5 class="card-img-top pt-3 fs-3 text-center ">Tata Surya</h5>
           <img src="assets/solarsystem.jpg" alt=""
             style="max-width: 50%; padding-top: 20px; height: auto; margin: auto;">
-          <p class="card-text px-3 py-3 " style="text-indent: 50px;">Tata surya atau bahasa Inggrisnya Solar System, merupakan kumpulan benda langit
-            yang terdiri atas sebuah bintang yang disebut matahari dan semua objek lainnya.
-            Semua objek ini terikat karena adanya gaya gravitasi matahari dan juga mengelilinginya secara langsung
-            maupun tidak langsung. Hal ini dikarenakan, gaya gravitasi yang dimiliki matahari jauh lebih besar daripada
-            gaya gravitasi benda langit lainnya. Oleh karena itu, benda-benda langit yang lain pun ikut mengelilingi
-            matahari.</p>
+          <p class="card-text px-5 pt-5 " style="text-indent: 50px;"><span style="color: red;">Tata Surya</span> merupakan kumpulan benda langit yang terdiri atas Matahari dan semua objek yang berputar mengelilinginya, termasuk delapan buah planet yang sudah diketahui dengan orbit berbentuk elips, lima planet kerdil/katai, 173 satelit alami yang telah diidentifikasi, dan jutaan benda langit (meteor, asteroid, komet) lainnya.
+            Semua objek ini berputar di sekitar matahari karena adanya gaya tarik gravitasi. 
+            <p class="card-text px-5" style="text-indent: 50px;"><span style="color: red;">Tata Surya</span> sebagai sistem antariksa yang saling terikat gravitasi dimana terdapat matahari dan benda-benda langit yang mengitarinya secara langsung maupun tidak langsung. Dari sekian banyak benda langit yang mengitari matahari secara langsung, terdapat benda langit yang paling besar yang dinamakan dengan planet.
+            </p>
+            <p class="card-text px-5" style="text-indent: 50px;"><span style="color: red;">Bulan</span> merupakan benda langit yang mengitari matahari secara tidak langsung, bulan merupakan satelit alami planet yang mengitari planet. Terdapat delapan planet besar yang mengitari matahari dengan lebih dari 160 buah bulan yang sudah diketahui, 5 atau lebih planet katai (dwarf planet), serta jutaan asteroid dan komet. Secara bersama-sama, semua benda langit tersebut membentuk tata surya yang menempati ruang angkasa dengan diameter 15 triliun kilometer.
+            </p>
+            <p class="card-text px-5 pb-5" style="text-indent: 50px;">Bagian yang terdekat dengan matahari adalah bagian sistem yang <span style="color: red;">berbentuk piringan</span> dimana seluruh planet berada pada bagian ini. Pada daerah yang lainnya yang jauh dari matahari, terdapat awan Oort, yakni daerah berbentuk bola yang menjadi tempat kedudukan komet.
+            Tahukah kamu antara Bumi dan Matahari terdapat jarak dengan rata-rata 149.600.000 km? Jarak tersebut sendiri membuat cahaya Matahari membutuhkan waktu 8,3 menit untuk sampai ke permukaan Bumi
+            </p>
         </div>
       </div>
+    </section>
+
+    <!-- PLANET -->
+    <section id="planet" class="p-4">
+      <div class="container">
+      <h1 class="text-center pt-5 text-white">Planet</h1>
       <div class="row pt-5">
         <div class="col-md-6 " style="padding-bottom: 50px ;">
           <div class="card">
             <div class="card-body">
               <h5 class="card-title py-3 fs-3 text-center">Matahari</h5>
               <img src="/assets/matahari_1.jpg" class="w-50 py-3 rounded-pill rounded mx-auto d-block" alt="">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-                <div class="a text-center">
-                  <a href="#" class="btn btn-primary ">Go somewhere</a>
-                </div>
+              <p class="card-text px-md-5" style="text-indent: 30px;">Matahari atau Surya adalah bintang di pusat tata surya. Bentuknya nyaris bulat dan terdiri dari plasma 
+                panas bercampur medan magnet. Diameternya sekitar 1.392.684 km, kira-kira 109 kali diameter Bumi, dan massanya 
+                (sekitar 2×1030 kilogram, 330.000 kali massa Bumi) mewakili kurang lebih 99,86 % massa total tata surya. Matahari merupakan
+                 benda langit terbesar di galaksi Bima Sakti yang besarnya bahkan 10 kali planet terbesar tata surya.
+                 <span style="color: red;">Matahari tidak termasuk planet karena matahari adalah bola gas hidrogen-helium raksasa yang tidak memiliki permukaan. Struktur matahari sangat jauh berbeda dengan bumi ataupun planet lainnya di Tata Surya</span></p>
+                <ul>
+                  <li>Usia matahari saat ini adalah 4.6 miliar tahun.</li>
+                  <li>Besar energi matahari kurang lebih sebesar 383 milyar triliun kilowatt.</li>
+                  <li>Jarak ke bumi adalah 150 juta km.</li>
+                  <li>Diameter matahari adalah 1.392.684 km.</li>
+                </ul>
             </div>
           </div>
         </div>
@@ -172,11 +136,19 @@
             <div class="card-body">
               <h5 class="card-title py-3 fs-3 text-center">Merkurius</h5>
               <img src="/assets/merkurius_2.jpg" class="w-50 py-3 rounded-pill rounded mx-auto d-block" alt="">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <div class="a text-center">
-                <a href="#" class="btn btn-primary ">Go somewhere</a>
-              </div>
+              <p class="card-text px-md-5" style="text-indent: 30px;">Merkurius adalah planet terkecil di Tata Surya sekaligus yang terdekat dari Matahari. Periode revolusi 
+                planet ini merupakan yang terpendek dari semua planet di Tata Surya, yakni 87,79 hari. Seperti halnya Venus, Merkurius 
+                merupakan planet inferior yang letak orbitnya berada di sebelah dalam orbit Bumi, dan ketika diamati dari Bumi, jarak 
+                sudutnya dari Matahari tidak pernah melebihi 28°. Karena jarak yang dekat dengan Matahari, planet ini hanya dapat dilihat 
+                di dekat ufuk barat setelah matahari terbenam atau ufuk timur sebelum matahari terbit, atau biasanya ketika aram. Merkurius 
+                akan tampak seperti bintang yang terang jika diamati pada waktu tersebut
+              </p>
+              <ul>
+                <li>Atmosfer tertipis di tata surya</li>
+                <li>Planet terkecil</li>
+                <li>Orbit tercepat di Tata Surya</li>
+                <li>Memiliki Komet</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -187,11 +159,21 @@
             <div class="card-body">
               <h5 class="card-title py-3 fs-3 text-center">Venus</h5>
               <img src="/assets/venus_3.jpg" class="w-50 py-3 rounded-pill rounded mx-auto d-block" alt="">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-                <div class="a text-center">
-                  <a href="#" class="btn btn-primary ">Go somewhere</a>
-                </div>
+              <p class="card-text px-md-5" style="text-indent: 30px;">Venus adalah planet terdekat kedua dari Matahari setelah Merkurius. 
+                Planet ini mengorbit Matahari selama 
+                224,7 hari Bumi. Venus tidak memiliki satelit alami dan dinamai dari dewi cinta dan kecantikan dalam mitologi Romawi. 
+                Setelah Bulan, planet ini merupakan objek alami tercerah di langit malam, dengan magnitudo tampak sebesar −4,6 yang cukup 
+                cerah untuk menghasilkan bayangan. Venus merupakan planet inferior dengan sudut elongasi yang mencapai 47,8°. Kecerahan 
+                maksimal planet ini dapat dilihat segera sebelum matahari terbit atau setelah matahari terbenam, sehingga disebut Bintang 
+                Fajar atau Bintang Senja. Venus adalah planet kebumian dan kadang-kadang disebut “planet saudara” Bumi karena ukuran, 
+                gravitasi, dan komposisi yang mirip (Venus merupakan planet terdekat dari Bumi dan planet yang ukurannya paling mendekati 
+                Bumi). Namun, dalam hal lain planet ini sangat berbeda dari Bumi.</p>
+                <ul>
+                  <li>Planet terpanas di Tata Surya</li>
+                  <li>Rotasi terlama di galaksi</li>
+                  <li>Rotasi searah jarum jam</li>
+                  <li>Banyak gunung berapi</li>
+                </ul>
             </div>
           </div>
         </div>
@@ -200,11 +182,20 @@
             <div class="card-body">
               <h5 class="card-title py-3 fs-3 text-center">Bumi</h5>
               <img src="/assets/bumi_4.jpg" class="w-50 py-3 rounded-pill rounded mx-auto d-block" alt="">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <div class="a text-center">
-                <a href="#" class="btn btn-primary ">Go somewhere</a>
-              </div>
+              <p class="card-text px-md-5" style="text-indent: 30px;">Bumi adalah planet ketiga dari Matahari yang merupakan planet terpadat dan terbesar kelima dari delapan 
+                planet dalam Tata Surya. Bumi juga merupakan planet terbesar dari empat planet kebumian di Tata Surya. Bumi terkadang disebut
+                dengan dunia atau Planet Biru. Bumi terbentuk sekitar 4,54 miliar tahun yang lalu, dan kehidupan sudah muncul di permukaannya
+                paling tidak sekitar 3,5 miliar tahun yang lalu. Biosfer Bumi kemudian secara perlahan mengubah atmosfer dan kondisi 
+                fisik dasar lainnya, yang memungkinkan terjadinya perkembangbiakan organisme serta pembentukan lapisan ozon, yang bersama 
+                medan magnet Bumi menghalangi radiasi surya berbahaya dan mengizinkan makhluk hidup mikroskopis untuk berkembang biak 
+                dengan aman di daratan. Lebih dari 70% permukaan Bumi ditutupi oleh air, dan sisanya terdiri dari benua dan 
+                pulau-pulau.</p>
+                <ul>
+                  <li>Bentuk bumi tidak benar-benar bulat sempurna</li>
+                  <li>Rotasi bumi semakin melambat</li>
+                  <li>Punya medan magnet yang sangat kuat</li>
+                  <li>Satu-satunya planet yang tidak dinamai berdasarkan nama dewa</li>
+                </ul>
             </div>
           </div>
         </div>
@@ -215,11 +206,23 @@
             <div class="card-body">
               <h5 class="card-title py-3 fs-3 text-center">Mars</h5>
               <img src="/assets/mars_5.jpg" class="w-50 py-3 rounded-pill rounded mx-auto d-block" alt="">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-                <div class="a text-center">
-                  <a href="#" class="btn btn-primary ">Go somewhere</a>
-                </div>
+              <p class="card-text px-md-5" style="text-indent: 30px;" >Mars adalah planet terdekat keempat dari Matahari. Namanya diambil dari dewa perang Romawi, Mars. 
+                Planet ini sering dijuluki sebagai "planet merah" karena tampak dari jauh berwarna kemerah-kemerahan. Ini disebabkan oleh
+                 keberadaan besi(III) oksida di permukaan planet Mars. Mars adalah planet bebatuan dengan atmosfer yang tipis. 
+                 Di permukaan Mars terdapat kawah, gunung berapi, lembah, gurun, dan tudung es. Periode rotasi dan siklus musim Mars 
+                 mirip dengan Bumi. Di Mars berdiri Olympus Mons, gunung tertinggi di Tata Surya, dan Valles Marineris, lembah terbesar 
+                 di Tata Surya. Selain itu, di belahan utara terdapat cekungan Borealis yang meliputi 40% permukaan Mars.
+                Lingkungan Mars lebih bersahabat bagi kehidupan dibandingkan keadaan planet Venus. Namun begitu, keadaannya tidak cukup 
+                ideal untuk manusia. Suhu udara yang cukup rendah dan tekanan udara yang rendah, ditambah dengan komposisi udara yang 
+                sebagian besar karbondioksida, menyebabkan manusia harus menggunakan alat bantu pernapasan jika ingin tinggal di sana. 
+                Misi-misi ke planet merah ini, sampai penghujung abad ke-20, belum menemukan jejak kehidupan di sana, meskipun yang amat 
+                sederhana.</p>
+                <ul>
+                  <li>Gunung paling tinggi di Tata Surya</li>
+                  <li>Orbit waktu yang terasa sangat lama</li>
+                  <li>Manusia bisa melompat lebih tinggi di Mars</li>
+                  <li>Dirumorkan sebagai planet pengganti bumi</li>
+                </ul>
             </div>
           </div>
         </div>
@@ -228,11 +231,22 @@
             <div class="card-body">
               <h5 class="card-title py-3 fs-3 text-center">Jupiter</h5>
               <img src="/assets/jupiter_6.jpg" class="w-50 py-3 rounded-pill rounded mx-auto d-block" alt="">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <div class="a text-center">
-                <a href="#" class="btn btn-primary ">Go somewhere</a>
-              </div>
+              <p class="card-text px-md-5" style="text-indent: 30px;">Jupiter atau Yupiter adalah planet terdekat kelima dari Matahari 
+                setelah Merkurius, Venus, Bumi, dan Mars. Planet ini juga merupakan planet terbesar di Tata Surya.[11] Jupiter merupakan 
+                raksasa gas dengan massa seperseribu massa Matahari dan dua setengah kali jumlah massa semua planet lain di Tata Surya. 
+                Planet ini dan raksasa gas lain di Tata Surya (yaitu Saturnus, Uranus, dan Neptunus) kadang-kadang disebut planet Jovian 
+                atau planet luar. Jupiter telah dikenal oleh para astronom sejak zaman kuno, dan dikaitkan dengan mitologi dan 
+                kepercayaan religius banyak peradaban. Bangsa Romawi menamai planet ini dari dewa Jupiter dalam mitologi Romawi. 
+                Saat diamati dari Bumi, magnitudo tampak Jupiter dapat mencapai −2,94, yang cukup terang untuk menghasilkan bayangan, 
+                dan juga menjadikannya objek tercerah ketiga di langit malam setelah Bulan dan Venus, walaupun Mars dapat menyaingi 
+                kecerahan Jupiter pada saat tertentu. Jupiter sebagian besar terdiri dari hidrogen dan helium. Seperempat massa Jupiter 
+                merupakan helium, walaupun jumlahnya hanya sepersepuluh komposisi Jupiter. </p><br>
+                <ul>
+                  <li>Durasi terpendek sejagat</li>
+                  <li>Revolusi Selama Lebih dari Sepuluh Tahun Waktu di Bumi</li>
+                  <li>Punya Awan-Awan Unik</li>
+                  <li> Ada Badai Dahsyat Bernama The Great Red Spot</li>
+                </ul>
             </div>
           </div>
         </div>
@@ -243,11 +257,24 @@
             <div class="card-body">
               <h5 class="card-title py-3 fs-3 text-center">Saturnus</h5>
               <img src="/assets/saturnus_7.jpg" class="w-50 py-3 rounded-pill rounded mx-auto d-block" alt="">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-                <div class="a text-center">
-                  <a href="#" class="btn btn-primary ">Go somewhere</a>
-                </div>
+              <p class="card-text px-md-5" style="text-indent: 30px;">Saturnus adalah planet keenam dari Matahari dan merupakan planet 
+                terbesar kedua di Tata Surya setelah Jupiter. Saturnus juga merupakan sebuah raksasa gas yang memiliki radius rata-rata 
+                sekitar 9 kali radius rata-rata Bumi. Massa jenis rata-rata Saturnus hanya 1/8 massa jenis rata-rata Bumi, tetapi 
+                dengan volume yang lebih besar dari Bumi, massa Saturnus tercatat 95 kali massa Bumi. Saturnus dinamai menurut 
+                dewa kesejahteraan dan agribudaya dalam mitologi Yunani; simbol astronominya (♄) melambangkan sabit yang digunakan 
+                oleh dewa tersebut.
+                Interior Saturnus kemungkinan besar terdiri dari inti yang mengandung besi, nikel, dan batuan (senyawa silikon dan oksigen).
+                 Inti Saturnus dikelilingi oleh lapisan dalam yang terdiri dari hidrogen metalik, lapisan menengah yang terdiri dari hidrogen
+                  cair dan helium cair, dan lapisan luar yang mengandung gas. Saturnus memiliki rona kuning pucat karena kristal-kristal 
+                  amonia yang memenuhi atmosfer bagian atasnya. Arus listrik yang terdapat di dalam lapisan hidrogen metaliknya diperkirakan
+                   merupakan penghasil medan magnet Saturnus, yang diketahui lebih lemah dari medan magnet Bumi, tetapi memiliki momen 
+                   magnetik 580 kali lebih besar dari milik Bumi karena ukuran Saturnus yang lebih besar</p>
+                <ul>
+                  <li>Cincin Saturnus bisa menghilang</li>
+                  <li>Memiliki Masa yang sangat ringan</li>
+                  <li>Planet terbesar kedua dalam Tata Surya</li>
+                  <li>Nama Saturnus Diambil Dari Nama Dewa Yunani</li>
+                </ul>
             </div>
           </div>
         </div>
@@ -256,11 +283,22 @@
             <div class="card-body">
               <h5 class="card-title py-3 fs-3 text-center">Uranus</h5>
               <img src="/assets/uranus_8.jpg" class="w-50 py-3 rounded-pill rounded mx-auto d-block" alt="">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <div class="a text-center">
-                <a href="#" class="btn btn-primary ">Go somewhere</a>
-              </div>
+              <p class="card-text px-md-5" style="text-indent: 30px;">Uranus (berasal dari nama Latin Ūranus untuk nama dewa Yunani Οὐρανός) adalah 
+                planet ketujuh dari Matahari. Uranus merupakan planet yang memiliki jari-jari terbesar ketiga sekaligus massa terbesar keempat di Tata
+                 Surya. Uranus juga merupakan satu-satunya planet yang namanya berasal dari tokoh dalam mitologi Yunani, dari versi Latinisasi nama 
+                 dewa langit Yunani Ouranos. Komposisi Uranus serupa dengan Neptunus, dan keduanya mempunyai komposisi kimiawi yang berbeda dari 
+                 raksasa gas yang lebih besar, Jupiter dan Saturnus. Karenanya, para astronom sering menempatkan Uranus dan Neptunus dalam kategori 
+                 "raksasa es" untuk membedakan keduanya dari raksasa gas. Atmosfer Uranus serupa dengan Jupiter dan Saturnus karena kandungan utamanya
+                  adalah hidrogen dan helium, tetapi mengandung lebih banyak unsur "es" seperti air, amonia dan metana, bersama dengan sisa 
+                  hidrokarbon. Atmosfer Uranus merupakan atmosfer planet terdingin di Tata Surya, dengan suhu terendah mencapai 49 K 
+                  (−224 °C; −371 °F). Atmosfer Uranus mempunyai struktur awan berlapis-lapis dan kompleks, serta diperkirakan lapisan awan
+                   terendahnya terdiri atas air dan lapisan awan tertingginya terdiri atas metana. </p>
+              <ul>
+                <li>Namanya diambil dari mitologi Yunani</li>
+                <li>Uranus mengorbit Matahari pada sisinya</li>
+                <li>Musim di Uranus sangat panjang</li>
+                <li>Uranus memiliki 27 bulan</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -271,11 +309,23 @@
             <div class="card-body">
               <h5 class="card-title py-3 fs-3 text-center">Neptunus</h5>
               <img src="/assets/neptunus_9.jpg" class="w-50 py-3 rounded-pill rounded mx-auto d-block" alt="">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-                <div class="a text-center">
-                  <a href="#" class="btn btn-primary ">Go somewhere</a>
-                </div>
+              <p class="card-text px-md-5" style="text-indent: 30px;">Neptunus merupakan planet terjauh (kedelapan) jika ditinjau dari Matahari. 
+                Planet ini dinamai dari dewa lautan Romawi. Neptunus merupakan planet terbesar keempat berdasarkan diameter (49.530 km) dan terbesar 
+                ketiga berdasarkan massa. Massa Neptunus tercatat 17 kali lebih besar daripada Bumi, dan sedikit lebih kecil daripada Uranus. 
+                Neptunus mengorbit Matahari pada jarak 30,1 sa atau sekitar 4.450 juta km. Periode rotasi planet ini adalah 16,1 jam, sedangkan 
+                periode revolusinya adalah 164,8 tahun. Simbol astronomisnya adalah ♆, yang merupakan trisula dewa Neptunus.
+                Neptunus ditemukan pada tanggal 23 September 1846. Planet ini merupakan planet pertama yang ditemukan melalui prediksi matematika.
+                 Perubahan yang tak terduga di orbit Uranus membuat Alexis Bouvard menyimpulkan bahwa hal tersebut diakibatkan oleh gangguan gravitasi
+                 dari planet yang tak dikenal. Neptunus selanjutnya diamati oleh Johann Galle dalam posisi yang diprediksikan oleh Urbain Le Verrier. 
+                 Satelit alam terbesarnya, Triton, ditemukan segera sesudahnya, sementara 12 satelit alam lainnya baru ditemukan lewat teleskop pada 
+                 abad ke-20. Neptunus telah dikunjungi oleh satu wahana angkasa, yaitu Voyager 2, yang terbang melewati planet tersebut pada tanggal 
+                 25 Agustus 1989.</p>
+                 <ul>
+                  <li>Diambil dari nama Romasi kuno</li>
+                  <li>Ditemukan secara tidak sengaja</li>
+                  <li>Mempunyai usia yang sama dengan matahari</li>
+                  <li>Hujan berlian</li>
+                 </ul>
             </div>
           </div>
         </div>
@@ -284,20 +334,105 @@
             <div class="card-body">
               <h5 class="card-title py-3 fs-3 text-center">Pluto</h5>
               <img src="/assets/pluto_10.jpg" class="w-50 py-3 rounded-pill rounded mx-auto d-block" alt="">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <div class="a text-center">
-                <a href="#info" class="btn btn-primary ">Go somewhere</a>
-              </div>
+              <p class="card-text px-md-5" style="text-indent: 30px;">Pluto (nama planet minor: 134340 Pluto) adalah planet katai di sabuk 
+                Kuiper dan objek trans-Neptunus pertama yang ditemukan. Pluto merupakan planet katai terbesar dan bermassa terbesar kedua di
+                 Tata Surya dan benda terbesar kesembilan dan bermassa terbesar kesepuluh yang mengorbit Matahari secara langsung. Pluto 
+                 merupakan objek trans-Neptunus dengan volume terbesar dan massa yang sedikit lebih kecil daripada Eris, planet katai di 
+                 piringan tersebar. Layaknya objek lain di sabuk Kuiper, Pluto terdiri dari batu dan es[13] dan relatif kecil—kurang lebih 
+                 seperenam massa Bulan dan sepertiga volume Bulan. Pluto memiliki orbit eksentris dan miring dengan jarak 30 sampai 49 
+                 satuan astronomi (4,4–7,3 miliar km) dari Matahari. Ini berarti ada saatnya Pluto lebih dekat ke Matahari daripada Neptunus; resonansi orbit yang stabil dengan Neptunus membuat kedua planet ini tidak bertabrakan. Pada tahun 2014, Pluto berjarak 32,6 sa dari Matahari. Cahaya Matahari butuh waktu 5,5 jam untuk mencapai Pluto pada jarak rata-ratanya (39,4 sa).[14]
+                Pluto ditemukan tahun 1930 dan awalnya dinyatakan sebagai planet kesembilan dari Matahari.</p><br><br>
+              <ul>
+                <li><span style="color: red;">Pluto sejak 2006 sudah tidak dinyatakan sebagai planet</span></li>
+                <li>Pluto dahulu planet raksasa</li>
+                <li>Tak lagi jadi planet di Tata Surya</li>
+                <li>Cara mengorbit yang aneh</li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
-      
       </div>
+    </div>
     </div>
   </section>
 
+  <!-- Section About -->
+  <section id="about" class="p-4">
+    <div class="container" style="color: white;">
+        <h1 class="text-center pt-5" style="padding-bottom:50px; ">Organization</h1>
+        <div class="row" style="padding-bottom: 50px;">
+            <div class="col-md-6" data-aos="fade-right">
+                <h3>Lembaga Penerbangan dan Antariksa Nasional (LAPAN)</h3><br>
+                <p>Lembaga Penerbangan dan Antariksa Nasional adalah Lembaga Pemerintah Non Kementerian Indonesia yang melaksanakan tugas pemerintahan di bidang penelitian dan pengembangan kedirgantaraan dan pemanfaatannya. Empat bidang utama LAPAN yakni penginderaan jauh, teknologi dirgantara, sains antariksa, dan kebijakan dirgantara.</p>
+            </div>
+            <div class="col-md-6 " data-aos="fade-left">
+              <a href="https://www.lapan.go.id/">
+                <img src="assets/lapan.png" class="img-rounded" width="50%" />
+              </a>
+            </div>
+        </div>
+        <div class="row" style="padding-bottom: 50px;">
+            <div class="col-md-6 px-md-5" data-aos="fade-right">
+              <a href="https://www.nasa.gov/">
+                <img src="assets/nasa.png" class="img-rounded" width="90%"/>
+              </a>
+            </div>
+            <div class="col-md-6" data-aos="fade-left">
+                <h3>National Aeronautics and Space Administration (NASA)</h3>
+                <p>Badan Penerbangan dan Antariksa Amerika Serikat adalah badan independen Pemerintah Federal AS yang bertanggung jawab atas program luar angkasa sipil, serta penelitian aeronautika dan luar angkasa. NASA didirikan pada tahun 1958, menggantikan National Advisory Committee for Aeronautics.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6" data-aos="fade-right">
+                <h3>Rusian Federal Space Agency / Roscosmos </h3>
+                <p>Perusahaan Negara untuk Aktivitas Antariksa (bahasa Rusia: Государственная корпорация по космической деятельности «Роскосмос», Gosudarstvyennaya korporaciya po kosmicheskoy dyeyatyel'nosti "Roskosmos"), secara umum dikenal sebagai Roscosmos (bahasa Rusia: Роскосмос) adalah badan usaha milik negara Rusia yang bertanggung jawab untuk penerbangan antariksa, program luar angkasa, dan riset aeronautika umum.
+                  Roscosmos awalnya merupakan bagian dari Badan Antariksa Federal Rusia (bahasa Rusia: Российское Федеральное космическое агентство, 'Rossiyskoe federal'noye kosmicheskoye agentstvo (RKA)) sebelum berkembang dan mengonsolidasikan dirinya pada badan negara tersebut pada 28 Desember 2015 melalui sebuah dekrit presiden, menjadi sebuah badan usaha milik negara antariksa utama Federasi Rusia. Sebelum 1992, Roscosmos adalah bagian dari Badan Penerbangan dan Antariksa Rusia (Rossiyskoe aviatsionno-kosmicheskoe agentstvo),dikenal sebagai Rosaviakosmos.</p>
+            </div>
+            <div class="col-md-6" data-aos="fade-left">
+              <a href="https://www.iafastro.org/membership/all-members/roscosmos.html">
+                <img src="assets/roscosmos.png" class="img-rounded" width="50%"/>
+              </a>
+            </div>
+        </div>
+        <div class="row" style="padding-bottom: 50px;">
+          <div class="col-md-6 px-md-5" data-aos="fade-right">
+            <a href="https://www.nasa.gov/">
+              <img src="assets/spacex.jpg" class="img-rounded" width="60%"/>
+            </a>
+          </div>
+          <div class="col-md-6" data-aos="fade-left">
+              <h3>Space Exploration Technologies Corporation (SpaceX)</h3>
+              <p>Space Exploration Technologies Corporation (SpaceX) adalah perusahaan transportasi luar angkasa swasta Amerika Serikat yang didirikan oleh Elon Musk. Perusahaan ini telah mengembangkan keluarga roket Falcon dengan tujuan menjadi kendaraan peluncuran yang dapat dipakai ulang. SpaceX juga mengembangkan wahana antariksa SpaceX Dragon untuk mengirim suplai dan pergantian awak Stasiun Luar Angkasa Internasional.
+                Perusahaan ini didirikan pada tanggal 6 Mei 2002 oleh seorang pengusaha bernama Elon Musk. Awalnya perusahaan ini berbasis di El Segundo, SpaceX kini beroperasi di Hawthorne, California.</p>
+          </div>
+      </div>
+    </div>
+    </section>
+    
+    <!-- CONTACT -->
+    <section id="about" class="p-4" style="background-color: salmon;">
+      <div class="container" style="color: white;">
+          <h1 class="text-center pt-5" style="padding-bottom:50px; ">About</h1>
+          <div class="row" style="padding-bottom: 50px;">
+              <div class="col-md-6 px-md-5" data-aos="fade-right">
+                <a href="https://www.nasa.gov/">
+                  <img src="assets/nasa.png" class="img-rounded" width="90%"/>
+                </a>
+              </div>
+              <div class="col-md-6" data-aos="fade-left">
+                <ul style="font-size: 25px;">
+                  <li>Zulpahmi Herman</li>
+                  <li>IF B 2020</li>
+                  <li></li>
+                  <li></li>
+                </ul>   
+              </div>
+          </div>
+          
+        </div>
+      </div>
+      </section>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
