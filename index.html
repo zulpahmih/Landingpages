@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bootstrap demo</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
   
 </head>
 
@@ -33,7 +35,7 @@
             <a class="nav-link active rounded-pill" href="#about">Organization</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active rounded-pill" href="#">Contact</a>
+            <a class="nav-link active rounded-pill" href="#contact">Contact</a>
           </li>
         </ul>
         <form class="d-flex d-flex-custom " role="search">
@@ -45,7 +47,7 @@
   </nav>
 
   <!-- Carousel -->
-  <section id="home" style=" width: 55%;margin: auto; margin-top: 100px; margin-bottom: 80px; ">
+  <section id="home" style=" width: 55%;margin: auto; margin-top: 100px; margin-bottom: 200px; ">
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
       <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -86,21 +88,25 @@
   </section>
 
   <!-- INFORMATION -->
-  <section id="info" class="p-4">
+  <section id="info" class="p-5">
     <div class="container" >
-      <h1 class="text-center pt-5 text-white">Information</h1>
+      <h1 class="text-center pt-5 text-white" data-aos="zoom-in">Information</h1>
       <div class="col-md-12 pt-3 ">
         <div class="card" >
-          <h5 class="card-img-top pt-3 fs-3 text-center ">Tata Surya</h5>
+          <h5 class="card-img-top pt-3 fs-3 text-center " data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000">Tata Surya</h5>
           <img src="assets/solarsystem.jpg" alt=""
-            style="max-width: 50%; padding-top: 20px; height: auto; margin: auto;">
-          <p class="card-text px-5 pt-5 " style="text-indent: 50px;"><span style="color: red;">Tata Surya</span> merupakan kumpulan benda langit yang terdiri atas Matahari dan semua objek yang berputar mengelilinginya, termasuk delapan buah planet yang sudah diketahui dengan orbit berbentuk elips, lima planet kerdil/katai, 173 satelit alami yang telah diidentifikasi, dan jutaan benda langit (meteor, asteroid, komet) lainnya.
+            style="max-width: 50%; padding-top: 20px; height: auto; margin: auto;" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
+          <p class="card-text px-5 pt-5 " style="text-indent: 50px;" data-aos="fade-right"><span style="color: red;">Tata Surya</span> merupakan kumpulan benda langit yang terdiri atas Matahari dan semua objek yang berputar mengelilinginya, termasuk delapan buah planet yang sudah diketahui dengan orbit berbentuk elips, lima planet kerdil/katai, 173 satelit alami yang telah diidentifikasi, dan jutaan benda langit (meteor, asteroid, komet) lainnya.
             Semua objek ini berputar di sekitar matahari karena adanya gaya tarik gravitasi. 
-            <p class="card-text px-5" style="text-indent: 50px;"><span style="color: red;">Tata Surya</span> sebagai sistem antariksa yang saling terikat gravitasi dimana terdapat matahari dan benda-benda langit yang mengitarinya secara langsung maupun tidak langsung. Dari sekian banyak benda langit yang mengitari matahari secara langsung, terdapat benda langit yang paling besar yang dinamakan dengan planet.
+            <p class="card-text px-5" style="text-indent: 50px;" data-aos="fade-left"><span style="color: red;">Tata Surya</span> sebagai sistem antariksa yang saling terikat gravitasi dimana terdapat matahari dan benda-benda langit yang mengitarinya secara langsung maupun tidak langsung. Dari sekian banyak benda langit yang mengitari matahari secara langsung, terdapat benda langit yang paling besar yang dinamakan dengan planet.
             </p>
-            <p class="card-text px-5" style="text-indent: 50px;"><span style="color: red;">Bulan</span> merupakan benda langit yang mengitari matahari secara tidak langsung, bulan merupakan satelit alami planet yang mengitari planet. Terdapat delapan planet besar yang mengitari matahari dengan lebih dari 160 buah bulan yang sudah diketahui, 5 atau lebih planet katai (dwarf planet), serta jutaan asteroid dan komet. Secara bersama-sama, semua benda langit tersebut membentuk tata surya yang menempati ruang angkasa dengan diameter 15 triliun kilometer.
+            <p class="card-text px-5" style="text-indent: 50px;" data-aos="fade-right"><span style="color: red;">Bulan</span> merupakan benda langit yang mengitari matahari secara tidak langsung, bulan merupakan satelit alami planet yang mengitari planet. Terdapat delapan planet besar yang mengitari matahari dengan lebih dari 160 buah bulan yang sudah diketahui, 5 atau lebih planet katai (dwarf planet), serta jutaan asteroid dan komet. Secara bersama-sama, semua benda langit tersebut membentuk tata surya yang menempati ruang angkasa dengan diameter 15 triliun kilometer.
             </p>
-            <p class="card-text px-5 pb-5" style="text-indent: 50px;">Bagian yang terdekat dengan matahari adalah bagian sistem yang <span style="color: red;">berbentuk piringan</span> dimana seluruh planet berada pada bagian ini. Pada daerah yang lainnya yang jauh dari matahari, terdapat awan Oort, yakni daerah berbentuk bola yang menjadi tempat kedudukan komet.
+            <p class="card-text px-5 pb-5" style="text-indent: 50px;" data-aos="fade-left">Bagian yang terdekat dengan matahari adalah bagian sistem yang <span style="color: red;">berbentuk piringan</span> dimana seluruh planet berada pada bagian ini. Pada daerah yang lainnya yang jauh dari matahari, terdapat awan Oort, yakni daerah berbentuk bola yang menjadi tempat kedudukan komet.
             Tahukah kamu antara Bumi dan Matahari terdapat jarak dengan rata-rata 149.600.000 km? Jarak tersebut sendiri membuat cahaya Matahari membutuhkan waktu 8,3 menit untuk sampai ke permukaan Bumi
             </p>
         </div>
@@ -110,13 +116,15 @@
     <!-- PLANET -->
     <section id="planet" class="p-4">
       <div class="container">
-      <h1 class="text-center pt-5 text-white">Planet</h1>
+      <h1 class="text-center pt-5 text-white" data-aos="zoom-in">Planet</h1>
       <div class="row pt-5">
         <div class="col-md-6 " style="padding-bottom: 50px ;">
           <div class="card">
-            <div class="card-body">
+            <div class="card-body" data-aos="zoom-out" data-aos-easing="ease-in-back"
+            data-aos-delay="10"
+            data-aos-offset="0">
               <h5 class="card-title py-3 fs-3 text-center">Matahari</h5>
-              <img src="/assets/matahari_1.jpg" class="w-50 py-3 rounded-pill rounded mx-auto d-block" alt="">
+              <img src="/assets/matahari_1.jpg" class="w-50 py-3 rounded-pill rounded mx-auto d-block" alt="" ">
               <p class="card-text px-md-5" style="text-indent: 30px;">Matahari atau Surya adalah bintang di pusat tata surya. Bentuknya nyaris bulat dan terdiri dari plasma 
                 panas bercampur medan magnet. Diameternya sekitar 1.392.684 km, kira-kira 109 kali diameter Bumi, dan massanya 
                 (sekitar 2×1030 kilogram, 330.000 kali massa Bumi) mewakili kurang lebih 99,86 % massa total tata surya. Matahari merupakan
@@ -133,7 +141,9 @@
         </div>
         <div class="col-md-6">
           <div class="card">
-            <div class="card-body">
+            <div class="card-body" data-aos="zoom-out" data-aos-easing="ease-in-back"
+            data-aos-delay="10"
+            data-aos-offset="0">
               <h5 class="card-title py-3 fs-3 text-center">Merkurius</h5>
               <img src="/assets/merkurius_2.jpg" class="w-50 py-3 rounded-pill rounded mx-auto d-block" alt="">
               <p class="card-text px-md-5" style="text-indent: 30px;">Merkurius adalah planet terkecil di Tata Surya sekaligus yang terdekat dari Matahari. Periode revolusi 
@@ -156,7 +166,9 @@
       <div class="row pt-5">
         <div class="col-md-6 " style="padding-bottom: 50px ;">
           <div class="card">
-            <div class="card-body">
+            <div class="card-body" data-aos="fade-right"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-sine">
               <h5 class="card-title py-3 fs-3 text-center">Venus</h5>
               <img src="/assets/venus_3.jpg" class="w-50 py-3 rounded-pill rounded mx-auto d-block" alt="">
               <p class="card-text px-md-5" style="text-indent: 30px;">Venus adalah planet terdekat kedua dari Matahari setelah Merkurius. 
@@ -179,7 +191,9 @@
         </div>
         <div class="col-md-6">
           <div class="card">
-            <div class="card-body">
+            <div class="card-body" data-aos="fade-left"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-sine">
               <h5 class="card-title py-3 fs-3 text-center">Bumi</h5>
               <img src="/assets/bumi_4.jpg" class="w-50 py-3 rounded-pill rounded mx-auto d-block" alt="">
               <p class="card-text px-md-5" style="text-indent: 30px;">Bumi adalah planet ketiga dari Matahari yang merupakan planet terpadat dan terbesar kelima dari delapan 
@@ -189,7 +203,7 @@
                 fisik dasar lainnya, yang memungkinkan terjadinya perkembangbiakan organisme serta pembentukan lapisan ozon, yang bersama 
                 medan magnet Bumi menghalangi radiasi surya berbahaya dan mengizinkan makhluk hidup mikroskopis untuk berkembang biak 
                 dengan aman di daratan. Lebih dari 70% permukaan Bumi ditutupi oleh air, dan sisanya terdiri dari benua dan 
-                pulau-pulau.</p>
+                pulau-pulau.</p><br>
                 <ul>
                   <li>Bentuk bumi tidak benar-benar bulat sempurna</li>
                   <li>Rotasi bumi semakin melambat</li>
@@ -203,7 +217,9 @@
       <div class="row pt-5">
         <div class="col-md-6 " style="padding-bottom: 50px ;">
           <div class="card">
-            <div class="card-body">
+            <div class="card-body" data-aos="zoom-in"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
               <h5 class="card-title py-3 fs-3 text-center">Mars</h5>
               <img src="/assets/mars_5.jpg" class="w-50 py-3 rounded-pill rounded mx-auto d-block" alt="">
               <p class="card-text px-md-5" style="text-indent: 30px;" >Mars adalah planet terdekat keempat dari Matahari. Namanya diambil dari dewa perang Romawi, Mars. 
@@ -228,7 +244,9 @@
         </div>
         <div class="col-md-6">
           <div class="card">
-            <div class="card-body">
+            <div class="card-body" data-aos="zoom-in"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
               <h5 class="card-title py-3 fs-3 text-center">Jupiter</h5>
               <img src="/assets/jupiter_6.jpg" class="w-50 py-3 rounded-pill rounded mx-auto d-block" alt="">
               <p class="card-text px-md-5" style="text-indent: 30px;">Jupiter atau Yupiter adalah planet terdekat kelima dari Matahari 
@@ -240,7 +258,7 @@
                 Saat diamati dari Bumi, magnitudo tampak Jupiter dapat mencapai −2,94, yang cukup terang untuk menghasilkan bayangan, 
                 dan juga menjadikannya objek tercerah ketiga di langit malam setelah Bulan dan Venus, walaupun Mars dapat menyaingi 
                 kecerahan Jupiter pada saat tertentu. Jupiter sebagian besar terdiri dari hidrogen dan helium. Seperempat massa Jupiter 
-                merupakan helium, walaupun jumlahnya hanya sepersepuluh komposisi Jupiter. </p><br>
+                merupakan helium, walaupun jumlahnya hanya sepersepuluh komposisi Jupiter. </p><br><br>
                 <ul>
                   <li>Durasi terpendek sejagat</li>
                   <li>Revolusi Selama Lebih dari Sepuluh Tahun Waktu di Bumi</li>
@@ -254,7 +272,9 @@
       <div class="row pt-5">
         <div class="col-md-6 " style="padding-bottom: 50px ;">
           <div class="card">
-            <div class="card-body">
+            <div class="card-body" data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
               <h5 class="card-title py-3 fs-3 text-center">Saturnus</h5>
               <img src="/assets/saturnus_7.jpg" class="w-50 py-3 rounded-pill rounded mx-auto d-block" alt="">
               <p class="card-text px-md-5" style="text-indent: 30px;">Saturnus adalah planet keenam dari Matahari dan merupakan planet 
@@ -280,7 +300,9 @@
         </div>
         <div class="col-md-6">
           <div class="card">
-            <div class="card-body">
+            <div class="card-body" data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
               <h5 class="card-title py-3 fs-3 text-center">Uranus</h5>
               <img src="/assets/uranus_8.jpg" class="w-50 py-3 rounded-pill rounded mx-auto d-block" alt="">
               <p class="card-text px-md-5" style="text-indent: 30px;">Uranus (berasal dari nama Latin Ūranus untuk nama dewa Yunani Οὐρανός) adalah 
@@ -306,7 +328,9 @@
       <div class="row pt-5">
         <div class="col-md-6 " style="padding-bottom: 50px ;">
           <div class="card">
-            <div class="card-body">
+            <div class="card-body" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
               <h5 class="card-title py-3 fs-3 text-center">Neptunus</h5>
               <img src="/assets/neptunus_9.jpg" class="w-50 py-3 rounded-pill rounded mx-auto d-block" alt="">
               <p class="card-text px-md-5" style="text-indent: 30px;">Neptunus merupakan planet terjauh (kedelapan) jika ditinjau dari Matahari. 
@@ -331,7 +355,9 @@
         </div>
         <div class="col-md-6">
           <div class="card">
-            <div class="card-body">
+            <div class="card-body" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
               <h5 class="card-title py-3 fs-3 text-center">Pluto</h5>
               <img src="/assets/pluto_10.jpg" class="w-50 py-3 rounded-pill rounded mx-auto d-block" alt="">
               <p class="card-text px-md-5" style="text-indent: 30px;">Pluto (nama planet minor: 134340 Pluto) adalah planet katai di sabuk 
@@ -362,46 +388,54 @@
     <div class="container" style="color: white;">
         <h1 class="text-center pt-5" style="padding-bottom:50px; ">Organization</h1>
         <div class="row" style="padding-bottom: 50px;">
-            <div class="col-md-6" data-aos="fade-right">
+            <div class="col-md-6">
                 <h3>Lembaga Penerbangan dan Antariksa Nasional (LAPAN)</h3><br>
                 <p>Lembaga Penerbangan dan Antariksa Nasional adalah Lembaga Pemerintah Non Kementerian Indonesia yang melaksanakan tugas pemerintahan di bidang penelitian dan pengembangan kedirgantaraan dan pemanfaatannya. Empat bidang utama LAPAN yakni penginderaan jauh, teknologi dirgantara, sains antariksa, dan kebijakan dirgantara.</p>
             </div>
-            <div class="col-md-6 " data-aos="fade-left">
+            <div class="col-md-6 ">
               <a href="https://www.lapan.go.id/">
-                <img src="assets/lapan.png" class="img-rounded" width="50%" />
+                <img src="assets/lapan.png" class="img-rounded" width="50%" data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000" />
               </a>
             </div>
         </div>
         <div class="row" style="padding-bottom: 50px;">
-            <div class="col-md-6 px-md-5" data-aos="fade-right">
+            <div class="col-md-6 px-md-5" >
               <a href="https://www.nasa.gov/">
-                <img src="assets/nasa.png" class="img-rounded" width="90%"/>
+                <img src="assets/nasa.png" class="img-rounded" width="90%" data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"/>
               </a>
             </div>
-            <div class="col-md-6" data-aos="fade-left">
+            <div class="col-md-6" >
                 <h3>National Aeronautics and Space Administration (NASA)</h3>
                 <p>Badan Penerbangan dan Antariksa Amerika Serikat adalah badan independen Pemerintah Federal AS yang bertanggung jawab atas program luar angkasa sipil, serta penelitian aeronautika dan luar angkasa. NASA didirikan pada tahun 1958, menggantikan National Advisory Committee for Aeronautics.</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6" data-aos="fade-right">
+            <div class="col-md-6" >
                 <h3>Rusian Federal Space Agency / Roscosmos </h3>
                 <p>Perusahaan Negara untuk Aktivitas Antariksa (bahasa Rusia: Государственная корпорация по космической деятельности «Роскосмос», Gosudarstvyennaya korporaciya po kosmicheskoy dyeyatyel'nosti "Roskosmos"), secara umum dikenal sebagai Roscosmos (bahasa Rusia: Роскосмос) adalah badan usaha milik negara Rusia yang bertanggung jawab untuk penerbangan antariksa, program luar angkasa, dan riset aeronautika umum.
                   Roscosmos awalnya merupakan bagian dari Badan Antariksa Federal Rusia (bahasa Rusia: Российское Федеральное космическое агентство, 'Rossiyskoe federal'noye kosmicheskoye agentstvo (RKA)) sebelum berkembang dan mengonsolidasikan dirinya pada badan negara tersebut pada 28 Desember 2015 melalui sebuah dekrit presiden, menjadi sebuah badan usaha milik negara antariksa utama Federasi Rusia. Sebelum 1992, Roscosmos adalah bagian dari Badan Penerbangan dan Antariksa Rusia (Rossiyskoe aviatsionno-kosmicheskoe agentstvo),dikenal sebagai Rosaviakosmos.</p>
             </div>
-            <div class="col-md-6" data-aos="fade-left">
+            <div class="col-md-6" >
               <a href="https://www.iafastro.org/membership/all-members/roscosmos.html">
-                <img src="assets/roscosmos.png" class="img-rounded" width="50%"/>
+                <img src="assets/roscosmos.png" class="img-rounded" width="50%" data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"/>
               </a>
             </div>
         </div>
         <div class="row" style="padding-bottom: 50px;">
-          <div class="col-md-6 px-md-5" data-aos="fade-right">
+          <div class="col-md-6 px-md-5" >
             <a href="https://www.nasa.gov/">
-              <img src="assets/spacex.jpg" class="img-rounded" width="60%"/>
+              <img src="assets/spacex.jpg" class="img-rounded" width="60%" data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"  />
             </a>
           </div>
-          <div class="col-md-6" data-aos="fade-left">
+          <div class="col-md-6" >
               <h3>Space Exploration Technologies Corporation (SpaceX)</h3>
               <p>Space Exploration Technologies Corporation (SpaceX) adalah perusahaan transportasi luar angkasa swasta Amerika Serikat yang didirikan oleh Elon Musk. Perusahaan ini telah mengembangkan keluarga roket Falcon dengan tujuan menjadi kendaraan peluncuran yang dapat dipakai ulang. SpaceX juga mengembangkan wahana antariksa SpaceX Dragon untuk mengirim suplai dan pergantian awak Stasiun Luar Angkasa Internasional.
                 Perusahaan ini didirikan pada tanggal 6 Mei 2002 oleh seorang pengusaha bernama Elon Musk. Awalnya perusahaan ini berbasis di El Segundo, SpaceX kini beroperasi di Hawthorne, California.</p>
@@ -411,31 +445,51 @@
     </section>
     
     <!-- CONTACT -->
-    <section id="about" class="p-4" style="background-color: salmon;">
+    <section id="contact" class="p-4" >
       <div class="container" style="color: white;">
-          <h1 class="text-center pt-5" style="padding-bottom:50px; ">About</h1>
+          <h1 class="text-center pt-5" style="padding-bottom:50px; " data-aos="zoom-out"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000">Contact</h1>
           <div class="row" style="padding-bottom: 50px;">
-              <div class="col-md-6 px-md-5" data-aos="fade-right">
+              <div class="col-md-6 px-md-5" >
                 <a href="https://www.nasa.gov/">
-                  <img src="assets/nasa.png" class="img-rounded" width="90%"/>
+                  <img src="assets/profil.jpeg" class="img-rounded rounded-circle" width="40%" data-aos="zoom-in"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="3000"/>
                 </a>
               </div>
-              <div class="col-md-6" data-aos="fade-left">
-                <ul style="font-size: 25px;">
-                  <li>Zulpahmi Herman</li>
-                  <li>IF B 2020</li>
-                  <li></li>
-                  <li></li>
-                </ul>   
+              <div class="col-md-6" data-aos="fade-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000">
+                <p style="font-size: 20px;"><i class="fa-brands fa-square-instagram fa-2x" style="padding-right: 20px;"></i>zulpahmi_ih</p>
+                <p style="font-size: 20px;"><i class="fa-regular fa-envelope fa-2x" style="padding-right: 10px;"></i> </i>zulmi473@gmail.com</p>
               </div>
           </div>
           
         </div>
       </div>
       </section>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-    crossorigin="anonymous"></script>
+
+      <!-- kontak+footer-->
+  <footer class="bg-dark text-white pt-3 pb-2" >
+     <div class="container text-center text-md-left">
+       <div class="row text-center text-md-left">
+     <div class="row align-items-center">
+       <div class="col-md-7 col-lg-8">
+         <p style="text-indent: 420px;">copyright © 2022 All right reserved by: Zulpahmi Herman</p>
+       </div>
+     </div>
+   </div>
+ </footer>
+ </section>
+ 
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+ integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+ crossorigin="anonymous"></script>
+ <script>
+  AOS.init();
+</script>
 </body>
 
 </html>
